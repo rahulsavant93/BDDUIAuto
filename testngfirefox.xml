@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Rahul/UIAutomation">
+        <parameter name="user" value="standard_user"></parameter>
+        <parameter name="pwd" value="secret_sauce"></parameter>
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="com.tests.LoginPageTest">
+            </class>
+            <class name="com.tests.HomePageTest">
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test verbose="2" preserve-order="true" name="AutomationChrome">
+        <parameter name="user" value="standard_user"></parameter>
+        <parameter name="pwd" value="secret_sauce"></parameter>
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.tests.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="AutomationFirefox">
+        <parameter name="user" value="standard_user"></parameter>
+        <parameter name="pwd" value="secret_sauce"></parameter>
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="com.tests.HomePageTest"/>
+        </classes>
+    </test>
+
+</suite>
